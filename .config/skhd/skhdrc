@@ -47,7 +47,6 @@ ctrl + alt - l : yabai -m window --warp east
 #shift + alt - 9 : yabai -m window --space 9;
 #shift + alt - 0 : yabai -m window --space 10;
 
-
 # -- Modifying the Layout --
 
 # rotate layout clockwise

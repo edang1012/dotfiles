@@ -38,7 +38,7 @@ yabai -m rule --add app="^Ice$" manage=off
 yabai -m rule --add app="^VLC$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
 yabai -m rule --add app="^Google Drive$" manage=off
-yabai -m rule --add app="^Sideloadly$" manage=off
+yabai -m rule --add app="^Sideloadly!$" manage=off
 
 
 # Refresh yabai if a tab is created or moved to new window

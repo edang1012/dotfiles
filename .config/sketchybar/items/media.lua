@@ -48,6 +48,7 @@ local media_artist = sbar.add("item", {
 		max_chars = 20,
 		y_offset = -6,
 	},
+	click_script = "$CONFIG_DIR/helpers/menus/bin/menus -s 'Control Center,NowPlaying'",
 })
 
 local media_title = sbar.add("item", {
@@ -63,6 +64,7 @@ local media_title = sbar.add("item", {
 		max_chars = 20,
 		y_offset = 5,
 	},
+	click_script = "$CONFIG_DIR/helpers/menus/bin/menus -s 'Control Center,NowPlaying'",
 })
 
 local function animate_detail(detail)
