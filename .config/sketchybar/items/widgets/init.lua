@@ -6,4 +6,4 @@
 --require("items.widgets.wireless")
 require("items.widgets.menuitems")
 --require("items.widgets.memory")
-require("items.widgets.cpu")
+--require("items.widgets.cpu")
