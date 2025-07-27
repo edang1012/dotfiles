@@ -1,0 +1,53 @@
+.shell powershell
+
+# Focus windows within space
+alt + i 	: komorebic focus up
+alt + j 	: komorebic focus left
+alt + k 	: komorebic focus down
+alt + l 	: komorebic focus right
+
+alt + u		: komorebic cycle-focus previous 	
+alt + o		: komorebic cycle-focus next
+
+# Move windows
+alt + shift + i         : komorebic move up
+alt + shift + j         : komorebic move left
+alt + shift + k         : komorebic move down
+alt + shift + l         : komorebic move right
+alt + shift + return    : komorebic promote
+
+# Workspaces
+alt + 1                 : komorebic focus-named-workspace 1
+alt + 2                 : komorebic focus-named-workspace 2
+alt + 3                 : komorebic focus-named-workspace 3
+alt + 4                 : komorebic focus-named-workspace 4
+alt + 5                 : komorebic focus-named-workspace 5
+alt + 6                 : komorebic focus-named-workspace 6
+
+# Move windows across workspaces
+alt + shift + 1         : komorebic move-to-named-workspace 1
+alt + shift + 2         : komorebic move-to-named-workspace 2
+alt + shift + 3         : komorebic move-to-named-workspace 3
+alt + shift + 4         : komorebic move-to-named-workspace 4
+alt + shift + 5         : komorebic move-to-named-workspace 5
+alt + shift + 6         : komorebic move-to-named-workspace 6
+
+# Manipulate windows
+alt + q                 : komorebic close
+alt + shift + m			: komorebic toggle-maximize
+alt + shift + f         : komorebic toggle-float
+
+# Resize windows
+alt + oem_plus          : komorebic resize-axis horizontal increase
+alt + oem_minus         : komorebic resize-axis horizontal decrease
+alt + shift + oem_plus  : komorebic resize-axis vertical increase
+alt + shift + oem_minus : komorebic resize-axis vertical decrease
+alt + shift + b         : komorebic retile
+
+# Layouts
+alt + shift + x			: komorebic flip-layout horizontal
+alt + shift + y			: komorebic flip-layout vertical
+
+# Reload whkd configuration
+alt + shift + x			: taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
+alt + shift + z         : komorebic reload-configuration
