@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.36/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "default_workspace_padding": 4,
+  "default_container_padding": 4,
+  "border": false,
+  "border_width": 8,
+  "border_offset": -2,
+  "mouse_follows_focus": false,
+  "theme": {
+    "palette": "Base16",
+    "name": "Ashes",
+    "unfocused_border": "Base03",
+    "bar_accent": "Base0D"
+  },
+  "animation": {
+    "enabled": false
+  },
+  "bar_configurations": [
+    "C:/Users/erick/komorebi.bar1.json",
+    "C:/Users/erick/komorebi.bar2.json"
+  ],
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "4",
+          "layout": "BSP"
+        },
+        {
+          "name": "5",
+          "layout": "BSP"
+        },
+        {
+          "name": "6",
+          "layout": "BSP"
+        }
+      ]
+    },
+	{
+      "workspaces": [
+        {
+          "name": "1",
+          "layout": "BSP"
+        },
+        {
+          "name": "2",
+          "layout": "BSP"
+        },
+        {
+          "name": "3",
+          "layout": "BSP"
+        }
+      ]
+    }
+  ],
+  "manage_rules": [
+    {
+      "kind": "Exe",
+      "id": "MusicBee.exe",
+      "matching_strategy": "Equals"
+    }
+  ]
+}
