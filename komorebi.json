@@ -22,7 +22,13 @@
     "C:/Users/erick/komorebi.bar1.json",
     "C:/Users/erick/komorebi.bar2.json"
   ],
+  "display_index_preferences": {
+    "0": "6TPW3B4",
+    "1": "FKTTBH3",
+	"2": "HKTTBH3"
+  },
   "monitors": [
+	// Monitor 1
     {
       "workspaces": [
         {
@@ -39,6 +45,8 @@
         }
       ]
     },
+	
+	// Monitor 2
 	{
       "workspaces": [
         {
@@ -55,6 +63,8 @@
         }
       ]
     },
+	
+	// Monitor 3
 	{
       "workspaces": [
         {
