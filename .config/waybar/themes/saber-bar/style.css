@@ -1,0 +1,306 @@
+/*
+ * __        __          _                  ____  _         _
+ * \ \      / /_ _ _   _| |__   __ _ _ __  / ___|| |_ _   _| | ___
+ *  \ \ /\ / / _` | | | | '_ \ / _` | '__| \___ \| __| | | | |/ _ \
+ *   \ V  V / (_| | |_| | |_) | (_| | |     ___) | |_| |_| | |  __/
+ *    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |____/ \__|\__, |_|\___|
+ *                 |___/                              |___/
+ *
+ * by Stephan Raabe (2023)
+ * -----------------------------------------------------
+*/
+
+/* -----------------------------------------------------
+ * Import Pywal colors
+ * ----------------------------------------------------- */
+/* @import 'style-light.css'; */
+@define-color background #3B4252;
+@define-color highlight #88C0D0;
+@define-color iconcolor1 #D8DEE9;
+@define-color textcolor1 #EBCB8B;
+@define-color textcolor2 #D08770;
+@define-color textcolor3 #a3be8c;
+@define-color textcolor4 #b48ead;
+@define-color textcolor5 #bf616a;
+
+@define-color backgroundlight #FFFFFF;
+@define-color backgrounddark #FFFFFF;
+@define-color workspacesbackground1 #FFFFFF;
+@define-color workspacesbackground2 #CCCCCC;
+@define-color bordercolor #FFFFFF;
+@define-color iconcolor #FFFFFF;
+
+/* -----------------------------------------------------
+ * General
+ * ----------------------------------------------------- */
+* {
+    font-family: "Noto Sans CJK JP";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: @background;
+    border: 0px solid @highlight;
+    border-radius: 8px;
+}
+
+/* -----------------------------------------------------
+ * Modules
+ * ----------------------------------------------------- */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 5px;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 5px;
+}
+
+/* -----------------------------------------------------
+ * Workspaces
+ * ----------------------------------------------------- */
+#workspaces {
+    color: @highlight;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 8px;
+}
+
+#workspaces button {
+    color: @highlight;
+}
+
+#workspaces button.active {
+    color: @background;
+    background: @highlight;
+    border-radius: 8px;
+}
+
+#workspaces button:hover {
+    color: @background;
+    background: @highlight;
+    border-color: transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: none;
+}
+
+#workspaces button:hover.active {
+    color: @background;
+    background: @highlight;
+    border-color: transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: none;
+}
+
+/* -----------------------------------------------------
+ * Window
+ * ----------------------------------------------------- */
+#window {
+    color: @textcolor1;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+/* -----------------------------------------------------
+ * Tooltips
+ * ----------------------------------------------------- */
+tooltip {
+    background: @background;
+    border: 2px solid @highlight;
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: @highlight;
+}
+
+/* -----------------------------------------------------
+ * Clock
+ * ----------------------------------------------------- */
+#clock {
+    color: @highlight;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+/* -----------------------------------------------------
+ * Custom Modules
+ * ----------------------------------------------------- */
+#cpu {
+    color: @textcolor3;
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+#memory {
+    color: @textcolor3;
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+#bluetooth,
+#bluetooth.on,
+#bluetooth.off,
+#bluetooth.connected {
+    color: @highlight;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+#network,
+#network.ethernet,
+#network.wifi {
+    color: @highlight;
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+#pulseaudio,
+#pulseaudio.muted {
+    color: @highlight;
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+#custom-appmenu {
+    color: @iconcolor1;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+#tray,
+#custom-settings,
+#custom-cliphist {
+    color: @iconcolor1;
+    background-color: transparent;
+    padding-left: 0px;
+    padding-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+#custom-media {
+    color: @textcolor1;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+#custom-notification {
+    color: @textcolor1;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 13px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+#custom-updates {
+    color: @textcolor2;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+#custom-updates.green {
+    color: @textcolor2;
+}
+
+#custom-updates.yellow {
+    color: @textcolor2;
+}
+
+#custom-updates.red {
+    color: @textcolor2;
+}
+
+#custom-system {
+    color: @textcolor3;
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: transparent;
+    border-radius: 8px;
+}
+
+/* -----------------------------------------------------
+ * Taskbar
+ * ----------------------------------------------------- */
+
+#taskbar {
+    background: @backgroundlight;
+    margin: 6px 15px 6px 0px;
+    padding: 0px;
+    border-radius: 15px;
+    font-weight: normal;
+    font-style: normal;
+    border: 3px solid @backgroundlight;
+}
+
+#taskbar button {
+    margin: 0;
+    border-radius: 15px;
+    padding: 0px 5px 0px 5px;
+}
+
+/* -----------------------------------------------------
+ * Custom Quicklinks
+ * ----------------------------------------------------- */

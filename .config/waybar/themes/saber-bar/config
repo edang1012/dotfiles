@@ -1,0 +1,41 @@
+{
+    // General Settings
+    // Position TOP
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "margin-top": 10,
+    "margin-bottom": 0,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 5,
+
+    // Load Modules
+    "include": [
+        "~/.config/waybar/themes/saber-bar/modules.json"
+    ],
+
+    // Modules Left
+    "modules-left": [
+        "custom/appmenu",
+        "hyprland/workspaces",
+        //"wlr/taskbar",
+        "hyprland/window"
+    ],
+    // Modules Center
+    "modules-center": [
+        "clock"
+    ],
+    // Modules Right
+    "modules-right": [
+        "custom/updates",
+        "custom/media",
+        "group/hardware",
+        "cpu",
+        "memory",
+        "bluetooth",
+        "network",
+        "pulseaudio",
+        "custom/notification"
+    ]
+}
